@@ -135,7 +135,7 @@ def handle(msg):
                         if tag in chats:
                             if chats[tag]['id'] != chat_id:
                                 approved.append(chats[tag]['name'])
-                                bot.forwardMessage(chats[tag]['id'], chat_id, msg['message_id'])
+                                #bot.forwardMessage(chats[tag]['id'], chat_id, msg['message_id'])
                                 if 'reply_to_message' in msg:
                                     bot.forwardMessage(chats[tag]['id'], chat_id, msg['reply_to_message']['message_id'])
                         else:
